@@ -1,0 +1,431 @@
+ @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+body{
+    background-color: rgb(249, 249, 250);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+header{    
+    display: flex;
+    height: 70;
+    width: auto;    
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px;   
+   background-color: #dddde0;
+   }
+  .balma{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+.img-logo img{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10px;    
+}   
+.barra-busqueda button img{
+    display: flex;
+    height: 20px;
+    width: 20px;
+} 
+nav li{    
+    list-style-type: none;
+    background-position: right top;
+    margin: 15px;
+    font-weight: 550;
+}
+.carrito img{
+    display: flex;
+    height: 50px;
+    width: 50px;   
+}
+.img-principal{
+    width: max-content;
+    margin: 0 auto;    
+}
+main{
+    display: flex; 
+    position: relative;   
+    padding: 2rem;
+}
+.pago{
+    display: flex;    
+}
+.envio{
+    display: flex;
+    position: absolute;
+    right: 40% ;
+    top: 32px;
+}
+.compra{
+    position: absolute;
+    right: 0%;
+    top: 10px;
+    align-content: center;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.marca h2{
+    text-align: center;
+    font-size: 50px;
+}
+.marca img{
+    text-align: center;
+    margin: 20px;
+    
+}.destacados{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;    
+}
+.desta h2{
+    text-align: center;
+    font-size: 50px;    
+}
+.formasdepago{       
+    margin: 5px;
+    
+}
+.formasdepago img{ 
+    display: flex;   
+    height: 50px;
+    width: 50px;      
+}
+.paginas{
+    display: flex;
+    height: 70;   
+    justify-content: space-between;
+    align-items: flex-start;    
+    padding: 10px;
+   background-color: #dddde0;
+   }
+.paginas li{
+    list-style-type: none;
+    text-decoration: none;
+}
+.clasesonline {
+   display: flex;
+   align-items: center;
+   flex-direction: column ;  
+}  
+
+.clasesonline{
+    padding: 2.5rem;
+    width: 100%;
+    height: 100%;
+    }
+    
+.clasesonline h2{
+    font-size:40px ;
+}
+.clasesonline table{
+    height: 250px;
+    width: 50%;  
+    font-size: 20px;
+    font-weight: 600;     
+}
+.horarios {
+    text-align: center;  
+    
+}
+.footer1 {    
+    width: 350px;
+    height: 300px;
+    margin: 5px;    
+    position: relative;  
+     
+} .footer1 li{
+    font-size: 16px;
+    font-weight: 550;
+}   
+.footer2{    
+    width: 200px;
+    height: 150px;
+    padding: 15px;
+    margin: 0px 15px;
+    position: absolute;
+    top: 80px;   
+}
+.footer2 li{
+    padding: 15px;
+   
+}
+.footer3{    
+    width: 400px;
+    height: 300px;     
+    margin: 5px 15px; 
+    position: absolute;
+    right: 10px;
+    
+}
+.footer3 h2{
+    text-align: center; 
+    
+}
+.redes li a img{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;    
+}
+.productos{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px;
+    justify-content: center;
+    padding: 5px;
+}
+.producto{    
+    position: relative;    
+    padding: 0.5em;
+    width: 320px; 
+    flex-direction: column;   
+    background-color: rgb(15, 15, 15);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.producto p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.producto__img{
+    display: flex;
+    justify-content: center;      
+    width: 100%; 
+    height: 300px;   
+    background-color: rgb(253, 253, 253);
+    
+}.producto__info{
+   margin: 1rem;
+    line-height: 1.5rem;
+    
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+.producto_precio{
+    position: absolute;
+    bottom: 0%;
+    margin: .5rem;
+}
+.contactos{
+    display: flex;
+    justify-content: center;
+}
+/*grid*/
+
+.title img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.carrito img{
+    height: 50px;
+    width: 50px;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    /* grid-template-columns: repeat(4, 1fr) 3%; */
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container>.headerr, .container>.content, .container>.sidebar, .container>.footer, .container>div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.container>.headerr , .container>.footer {
+    grid-column: 1/-1;
+    background-color: #1378c5;
+    color: #ffffff;
+    
+}
+.headerr.somos{
+    display: flex;
+    text-align: center;
+}
+
+.container>.content {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.content>.article {
+    background: #808e9b;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9
+}
+
+.content .article h1,
+.content .article p {
+    padding: 10px;
+}
+
+.container>.sidebar {
+    grid-column: span 2;
+    grid-row: span 4;
+    background: #485460;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sidebar img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+    .container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    
+    }
+    .headerr {
+        text-align: center;
+        
+    }
+    .article{
+        align-items: center;
+    }
+    .container .content {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;        
+        justify-content: center;
+        padding: 10px;
+        width: 400px;
+
+    }
+    .container .sidebar {
+        grid-column: 1/ -1;
+        flex-direction: column;        
+        justify-content: center;
+        width: 400px;
+    }
+    .title{
+        display: flex;
+        width: 500px;
+        flex-direction: column;        
+        justify-content: center;
+    }
+    .paginas{
+     display: flex;
+     
+        
+        width: 500px;
+
+    }
+    .footer3 h2{
+        display: flex;
+        font-size: 1.2rem;
+        
+       
+    }
+    .redes li {
+        display: block;
+        justify-content:center;
+        
+    }
+    .footer3{
+        left: 52px;
+         
+    }
+    .redes{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer1 li{
+        display: none;
+    }
+    .container>.headerr, .container>.content, .container>.sidebar, .container>.footer, .container>header{
+        width: 400px;
+    }
+    
+    
+    /*animacion*/
+}
+.img-logo img:hover{
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+}
+.marca img:hover{
+   transform: scalex(1.5) scaleY(1.5);        
+}  
+nav a:hover{
+     
+     color: azure;         
+ }  
+ .footer1 a:hover{
+    color: azure;
+ }
+.clasesonline{
+    width: 100%;
+    height: 50vh;
+    color: rgb(5, 0, 0);
+    background: linear-gradient(45deg,rgba(255, 255, 254, 0.904),rgb(106, 117, 146),rgba(68, 99, 134, 0.986),rgba(45, 118, 131, 0.26));
+    background-size: 400% 400%;
+    position: relative;
+    animation: clase 5s ease-in-out infinite;    
+}
+@keyframes clase{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+     
+
+    
+
+
+
+    
+
+ 
+   
+
+  
+    
+    
+
+   
+
+
+   
+
+    
+   
+
+
+
+
+ 
+
+
+
+
+
+    
+
+
